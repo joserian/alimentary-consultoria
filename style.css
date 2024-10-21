@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+html, body {
+    font-family: "Noto Sans", serif;
+    background-color: #86efac;
+}
+
+/* SERVICES LIST */
+
+.services {
+    padding: 30px 30px 0px 30px; margin:30px 30px 0px 30px;
+
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.item:hover {
+    cursor:pointer;
+
+    .item-img {
+        filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.250))
+
+    }
+}
+
+.item {
+    width:200px; margin-top: 30px;    text-align: center;
+    .item-img {
+        width:100px;
+    }
+}
+
+.larger {
+    width:300px;
+}
+
+/* Footer */
+
+.link-container {
+    padding-left: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align:left;
+
+    position:relative;
+    min-height:55px;
+}
+
+.link {
+    font-size: 1.1em; font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.link-circle {
+    position:absolute; left:-3px; width: 50px; padding:10px; border-radius: 50%; height:50px;
+    transition: 0.2s ease;
+}
+
+.link-circle:hover {
+background-color:rgba(255, 255, 255, 0.13);
+}
+
+/* Logo */
+#logo {
+    width:400px;
+    transition: 0.2s ease;
+}
+
+@media (max-width: 400px) {
+    #logo {
+        width: 300px;
+    }
+
+    .link-container {
+        min-width: 60px;
+    }
+
+}
