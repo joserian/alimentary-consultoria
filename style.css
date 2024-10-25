@@ -9,7 +9,7 @@
 
 html, body {
     font-family: "Noto Sans", serif;
-    background-color: #86efac;
+    background-color: #ffdd;
 }
 
 /* SERVICES LIST */
@@ -84,6 +84,16 @@ background-color:rgba(255, 255, 255, 0.13);
 #logo {
     width:400px;
     transition: 0.2s ease;
+}
+
+footer {
+    position:absolute; left:0; width:100%; background-color: #4ade80; padding: 15px 30px 25px 30%; margin-top: 50px; text-align:left;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 15px 30px 25px 30px;
+    }
 }
 
 @media (max-width: 400px) {
